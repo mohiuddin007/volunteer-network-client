@@ -9,7 +9,9 @@ const SpecificInfo = (props) => {
         })
         .then(res => res.json())
         .then(result => {
-           console.log('deleted successfully');
+            if(result){
+                alert('Data deleted successfully please reload this page');
+              }
           })
 
     }
