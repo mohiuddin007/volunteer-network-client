@@ -4,7 +4,7 @@ const SpecificInfo = (props) => {
     const {_id, name, email, organization, date} = props.data;
 
     const deleteSpecificVolunteerData = (id) => {
-        fetch(`http://localhost:8000/deleteVolunteer/${id}`, {
+        fetch(`https://sleepy-oasis-98992.herokuapp.com/deleteVolunteer/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())

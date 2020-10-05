@@ -11,7 +11,7 @@ const Register = () => {
     const [allActivity, setAllActivity] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/allActivity')
+        fetch('https://sleepy-oasis-98992.herokuapp.com/allActivity')
         .then(res => res.json())
         .then(data => {
             setAllActivity(data);
@@ -23,7 +23,7 @@ const Register = () => {
    
     const onSubmit = data => {
               const newRegistration = {...data};
-              fetch('http://localhost:8000/newRegister',{
+              fetch('https://sleepy-oasis-98992.herokuapp.com/newRegister',{
               method: 'POST',
               headers: {'Content-Type': 'application/json'},
               body: JSON.stringify(newRegistration)

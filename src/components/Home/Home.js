@@ -8,7 +8,7 @@ const Home = () => {
 
     
     useEffect(() => {
-        fetch('http://localhost:8000/allActivity')
+        fetch('https://sleepy-oasis-98992.herokuapp.com/allActivity')
         .then(res => res.json())
         .then(data => {
             setAllActivity(data); 

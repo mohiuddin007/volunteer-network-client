@@ -9,7 +9,7 @@ const AddEvent = () => {
 
     const onSubmit = data => {
         const newEvent = {data};
-            fetch('http://localhost:8000/addEvent', {
+            fetch('https://sleepy-oasis-98992.herokuapp.com/addEvent', {
                 method: 'POST',
                 headers: {
                     'Content-Type' : 'application/json'

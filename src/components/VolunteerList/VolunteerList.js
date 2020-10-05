@@ -6,7 +6,7 @@ const VolunteerList = (props) => {
     const {_id, name, email, date} = props.volunteer;
 
     const deleteVolunteer = (id) => {
-        fetch(`http://localhost:8000/deleteVolunteer/${id}`, {
+        fetch(`https://sleepy-oasis-98992.herokuapp.com/deleteVolunteer/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())
@@ -15,18 +15,6 @@ const VolunteerList = (props) => {
           })
 
     }
-    // function deleteProduct(event, id) {
-    //     fetch(`/delete/${id}`, {
-    //       method: 'DELETE'
-    //     })
-    //     .then(res => res.json())
-        // .then(result => {
-        //   if(result){
-        //     event.target.parentNode.style.display = 'none';
-        //   }
-        //  console.log(result)
-        // })
-    //   }
 
     return (
         

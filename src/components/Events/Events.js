@@ -7,7 +7,7 @@ const Events = () => {
     const [specificVolunteer, setSpecificVolunteer] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/specificVolunteer?email='+allInfo.email)
+        fetch('https://sleepy-oasis-98992.herokuapp.com/specificVolunteer?email='+allInfo.email)
         .then(res => res.json())
         .then(data => {
             setSpecificVolunteer(data)

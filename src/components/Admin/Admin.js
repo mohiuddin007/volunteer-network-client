@@ -11,7 +11,7 @@ const Admin = () => {
     const [volunteerList, setVolunteerList] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/allVolunteerList')
+        fetch('https://sleepy-oasis-98992.herokuapp.com/allVolunteerList')
         .then(res => res.json())
         .then(data => {
              setVolunteerList(data);
