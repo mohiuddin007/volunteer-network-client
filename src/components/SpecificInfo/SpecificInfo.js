@@ -21,7 +21,6 @@ const SpecificInfo = (props) => {
             <p>Volunteer Email: {email}</p>
             <p>Register Date: {date}</p>
             <h5>Your Activity: {organization}</h5>
-            <p>{_id}</p>
             <button className="btn btn-info"  onClick={() => deleteSpecificVolunteerData(`${_id}`)}>Cancel</button>
         </div>
     );
