@@ -33,10 +33,10 @@ function App() {
          <Route path="/login">
            <Login/>
          </Route>
-         <Route path="/events">
+         <PrivateRoute path="/events">
            <Header/>
            <Events/>
-         </Route>
+         </PrivateRoute>
          <PrivateRoute path="/register/:id">
            <Header/>
            <Register/>
